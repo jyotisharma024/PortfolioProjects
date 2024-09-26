@@ -1,12 +1,4 @@
-use newdb;
-LOAD DATA INFILE "C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/CovidDeaths.csv" 
-INTO TABLE coviddeaths1 
-FIELDS TERMINATED BY ','  
-ENCLOSED BY '"'  
-LINES TERMINATED BY '\n' 
-IGNORE 1 ROWS
-(@total_cases, other_column_1, other_column_2, ...)
-SET total_cases = NULLIF(@total_cases, '');
+
 
 LOAD DATA INFILE "C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/CovidDeaths.csv"
 INTO TABLE coviddeaths1
